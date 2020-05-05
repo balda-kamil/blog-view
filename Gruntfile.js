@@ -29,7 +29,7 @@ module.exports = function(grunt){
     uglify: {
       build: {
         files: [{
-          src: './build/js/scripts.js',
+          src: ['./build/js/glider/glider.js', './build/js/main/main.js'],
           dest: './build/js/scripts.js'
         }]
       }
@@ -49,7 +49,8 @@ module.exports = function(grunt){
       },
       dist: {
         files: {
-          './build/js/scripts.js' : './js/main.js'
+          './build/js/glider/glider.js' : './js/glider.js',
+          './build/js/main/main.js' : './js/main.js',
         }
       }
     },
@@ -108,5 +109,5 @@ module.exports = function(grunt){
   grunt.registerTask('grunt-babel', ['babel'])
 
   grunt.registerTask('force_css', ['sass', "concat-css"])
-  grunt.registerTask('force_js', ['concat-js', 'babel', 'grunt-uglify'])
+  grunt.registerTask('force_js', ['concat-js', 'grunt-uglify'])
 }
