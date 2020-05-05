@@ -1,0 +1,127 @@
+section {
+  padding: 60px 0; }
+
+.no-padding {
+  padding: 0; }
+
+nav {
+  padding: 23px 0; }
+
+.bg-blue {
+  background: #215398; }
+
+.bg-gray {
+  background: #f5f5f5; }
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: calc(50% - 20px);
+  z-index: 300; }
+
+.pink-dot {
+  position: relative; }
+  .pink-dot:after {
+    position: absolute;
+    content: " ";
+    background: #ff3859;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    bottom: -15px;
+    right: calc(50% - 15px); }
+
+.container .row--blue h1 {
+  color: #fff; }
+
+.container .row--blue h4 {
+  color: #fff;
+  opacity: .6; }
+
+.container .row--gray h1 {
+  color: #2d3236; }
+
+.container .row--gray h4 {
+  color: #2d3236;
+  opacity: .6; }
+
+.heading--title {
+  text-align: center; }
+  .heading--title h1 {
+    font-size: 40px;
+    font-weight: 400; }
+  .heading--title h4 {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px; }
+
+.white-box {
+  background: #ffffff;
+  padding: 40px;
+  color: #808080;
+  text-align: center;
+  max-height: 228px !important;
+  margin: 0 10px;
+  width: 330px; }
+  .white-box h5 {
+    color: #2d3236;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 10px; }
+  .white-box p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px; }
+  .white-box img {
+    max-width: 42px;
+    margin-top: 10px; }
+
+.pos-rel {
+  position: relative; }
+
+.mt-45 {
+  margin-top: 45px; }
+
+.white-boxes {
+  max-width: 1030px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 32px; }
+
+@media all and (max-width: 1199px) {
+  .white-boxes {
+    flex-wrap: wrap; }
+    .white-boxes .white-box {
+      margin-bottom: 20px; }
+  .glider-contain {
+    max-width: 730px; }
+  .glider-next {
+    right: -33px; }
+  .glider-prev {
+    left: -33px; } }
+
+@media all and (max-width: 830px) {
+  .glider-contain {
+    max-width: 630px; } }
+
+@media all and (max-width: 768px) {
+  .glider-contain {
+    max-width: 430px; } }
+
+@media all and (max-width: 526px) {
+  .glider-contain {
+    max-width: 330px; }
+  .glider-next {
+    right: -23px; }
+  .glider-prev {
+    left: -23px; } }
+
+@media all and (max-width: 426px) {
+  .glider-contain {
+    max-width: 260px; }
+  .glider-next {
+    right: -23px; }
+  .glider-prev {
+    left: -23px; } }
